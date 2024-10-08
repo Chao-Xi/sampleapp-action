@@ -4,7 +4,7 @@ name: build
 on:
   push:
     paths:
-      - ".github/workflows/*"
+      - ".github/workflows/build.yaml"
       - "."
   workflow_dispatch: # manual
 
