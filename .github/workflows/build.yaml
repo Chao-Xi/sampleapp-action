@@ -17,7 +17,7 @@ jobs:
       - run: dotnet --list-runtimes
       - run: dotnet --list-sdks
       - run: dotnet build
-        # working-directory: ./
+        working-directory: ./
     #   - run: dotnet test
     #     working-directory: ./*
 
