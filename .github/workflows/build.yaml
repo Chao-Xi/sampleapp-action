@@ -18,8 +18,8 @@ jobs:
       - run: dotnet --list-sdks
       - run: dotnet build
         working-directory: ./
-    #   - run: dotnet test
-    #     working-directory: ./*
+      - run: dotnet test
+        working-directory: ./
 
 
 
