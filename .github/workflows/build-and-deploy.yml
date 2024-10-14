@@ -2,7 +2,7 @@ name: Build and Deploy .NET App
 
 on:
   push:
-    paths:
+    branches:
       - main
   workflow_dispatch: # manual
 
