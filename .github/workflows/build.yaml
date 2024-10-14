@@ -5,7 +5,6 @@ on:
   push:
     paths:
       - ".github/workflows/build.yaml"
-      - "."
   workflow_dispatch: # manual
 
 jobs:
