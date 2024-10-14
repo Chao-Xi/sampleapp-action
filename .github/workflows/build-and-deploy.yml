@@ -13,12 +13,15 @@ jobs:
         steps:
             
             - name: checkout code
-              uses: action/checkout@v4
+              uses: action/checkout@v4.1.7
 
             - name: Set up .NET core
-              uses: action:/setup-dotnet@v4
+              uses: action:/setup-dotnet@v4.0.1
               with:
                 dotnet-version: '8.x'
+
+            - name: Build code
+              run: dotnet build --configuration Release
             
             - name: Publish code
               run: dotnet publish -c Release --property:PublishDir="${{ runner.temp }}\myapp"
